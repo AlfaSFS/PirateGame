@@ -1,0 +1,17 @@
+
+.rs-pru3d-restartpanel {
+
+  width: 300px;
+  font-size: 40px;
+  text-transform:uppercase;
+  text-align: center;
+  padding:16px;
+  color:#eee;
+  background:rgba(10, 10, 10, 0.9);
+  top:50%;
+  left:50%;
+  position: fixed;
+  transform:translate(-50%, -50%);
+  border-radius:10px;
+  user-select:none;
+}

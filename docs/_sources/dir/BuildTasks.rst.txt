@@ -1,0 +1,40 @@
+
+Build Tasks
+============
+
+The following build tasks are available for development and production. In the terminal, type :code:`grunt {taskname}` to execute the task
+
+* **default**:
+    Default Grunt tasks, this will launch "http-server" and "watch" tasks
+* **dist** 
+    Create distrubitions, including mifnied CSS and Javascript files
+
+* **production**
+    Game production ready files
+
+* **http-server**
+    Launch a http server in the background for local testing
+
+* **compass**
+    Compile SCSS files to CSS files
+
+* **pug**
+    Compile pug templates to html files 
+
+* **watch**
+    Watch for changes in sass and pug folders and auto compile them
+
+* **cssmin**
+    Minified application css file, exported in *dist* folder (bp3d.min.css and bp3d.light.min.css)
+
+* **clean**
+    Various targets to cleanup the project before rebuilding
+
+* **copy**
+    Copy assets, css and js files from *test* folder to build examples and dist files
+
+* **requirejs**: 
+    Build, compile and minify *bp3d.min.js*, exported in *dist* folder
+
+* **compress**: 
+    Compressed distributed minified script *bp3d.min.js* into GZIP format, produce *bp3d.min.gz.js*

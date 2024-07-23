@@ -1,0 +1,30 @@
+
+=====================
+WordPress Integration
+=====================
+
+You can easily insert the game into WordPress post or page using iframe tag
+
+Upload the game to WordPress
+--------------------------
+
+* Inside download package, rename "production" folder to "pirate-run"
+* Upload "pirate-run" to WordPress "uploads" folder. The path of "uploads" is "your_site_root/wp-content/uploads"
+* Check that you can launch the game by going to "yourwebsite.com/wp-content/uploads/pirate-run/index.html"
+
+Insert the game into WordPress
+------------------------------------------
+
+* Create a new WordPress post
+* Switch to Code Editor by triggering the three dot icon in the top bar and choose Editor - Code editor
+* Add some title for the post
+* Add iframe tag to embed the game in the post body
+
+.. code-block:: html
+  :linenos:
+
+    <iframe src="yourwebsite.com/wp-content/uploads/pirate-run/index.html" width="1000" height"800"></iframe>
+
+* Change the game width and height by modifying those values in iframe tag
+
+* View the post with the game you just embed

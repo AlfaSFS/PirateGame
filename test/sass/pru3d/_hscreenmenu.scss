@@ -1,0 +1,33 @@
+
+.rs-hscreenmenu {
+
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
+  .menu-list {
+
+    width: 250px;
+    margin:0 auto;
+    text-align: center;
+  }
+
+  .menu-item {
+    font-family:'Wendy One', cursive;
+    font-weight:400;
+    font-size:22px;    
+    color:white;
+    cursor:pointer;
+    padding:16px;
+    margin:22px;
+    border:2px solid #fff;
+    border-radius:30px;
+    transition:all 0.2s ease-out;
+  }
+
+  .menu-item:hover {
+    color:#111;
+    background:$accentColor;
+  }
+}

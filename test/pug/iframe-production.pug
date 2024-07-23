@@ -1,0 +1,14 @@
+extends layout-production
+
+block css
+  link(rel="stylesheet" href="css/pru3d.prod.min.css")
+  link(rel="stylesheet" href="css/pru3d-iframe.css")
+block title
+  title 3D Sliding Puzzle - Iframe test
+block append script
+  script(src="js/pru3d.min.js")
+
+block body
+  = '\n'
+  body
+    iframe(id="pru3d-iframe", src="index.html", width="640", height="960")

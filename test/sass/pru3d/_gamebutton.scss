@@ -1,0 +1,77 @@
+
+$mainBtnSize:42px;
+$mainBtnFontSize:20px;
+$mainBtnBgColor:$thirdColor;
+$mainBtnBgColorExtra:$secondColor;
+
+.rs-pru3d-gamebuttonbar {
+
+  position: absolute;
+  bottom:15px;
+  left:50%;
+  transform:translateX(-50%);
+  width: 100%;
+  max-width:260px;
+  display: flex;
+  align-items:flex-start;
+  justify-content:space-around;
+}
+
+.rs-pru3d-mainbutton {
+
+  display: block;
+  width: $mainBtnSize;
+  height: $mainBtnSize;
+  line-height: $mainBtnSize;
+  text-align: center;
+  border-radius:50%;
+  font-size:$mainBtnFontSize;
+  //border:2px solid white;
+  background:#111;
+  color:#eee;
+  transition:all 0.1s ease-out;
+
+  &:hover {
+    background:#eee!important;
+    color:#111;
+  }
+}
+
+.rs-pru3d-flatview {
+  background:#111!important;
+  color:#eee;
+}
+
+.rs-pru3d-mainbutton-extra {
+
+  background:$mainBtnBgColorExtra!important;
+
+  &:hover {
+    background:#111!important;
+    color:#eee;
+  }
+}
+
+.rs-pru3d-gamewonbar {
+
+  position: absolute;
+  bottom:15px;
+  left:50%;
+  transform:translateX(-50%);
+  width: 100%;
+  max-width:400px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  
+  img {
+    display: block;
+    cursor:pointer;
+    margin:0 24px;
+    transition:0.25s all ease-out;
+  }
+
+  img:hover {
+    transform:scale(1.15);
+  }
+}

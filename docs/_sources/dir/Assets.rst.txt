@@ -1,0 +1,17 @@
+
+=======
+Assets
+=======
+
+You can reskin the game by replacing many assets in different folders using the same asset names:
+
+::
+
+  assets/
+    graphics/
+    sounds/
+    text/
+
+* *graphics:* Core game graphics, many can be replaced like logo, padding pattern, board textures...
+* *sounds:* Game sound and music effects
+* *text:* Help file text content

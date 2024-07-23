@@ -1,0 +1,119 @@
+
+// Extra Small devices (portrait phones) {
+@media screen and (max-width: 574px) { 
+
+  .rs-pru3d-movebtn {
+    .movebtn-value {
+      display: none!important;
+    }
+  }
+
+  .rs-hscreen-header {
+
+    .app-info {
+      display: none!important;
+    }
+
+    .app-progress {
+      width: 200px;
+    }
+  }
+}
+
+// Small devices (portrait phones) {
+@media screen and (min-width: 575px) { 
+
+  .rs-pru3d {
+    /*min-height:580px !important;*/
+  }
+
+  .rs-hscreen-header {
+
+    .app-title {
+      font-size: 32px;
+      margin-bottom:6px;
+    }
+
+    .appt-info {
+      font-size:12px;
+    }
+
+    .app-progress {
+      width: 200px;
+    }
+  }
+  .trophy-level-title {
+    font-size:22px;
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) { 
+
+  .rs-pru3d {
+  }
+
+  .rs-hscreen-header {
+
+    .app-title {
+      font-size: 40px;
+      margin-bottom:8px;
+    }
+
+    .appt-info {
+      font-size:16px;
+    }
+
+    .app-progress {
+      width: 250px;
+    }
+  }
+  .trophy-level-title {
+    font-size:22px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) { 
+
+  .rs-pru3d {
+    /*min-height:620px !important;*/
+  }
+
+  .rs-hscreen-header {
+
+    .app-title {
+      font-size: 60px;
+      margin-bottom:2px;
+    }
+
+    .appt-info {
+      font-size:20px;
+    }
+
+    .app-progress {
+      width: 300px;
+    }
+  }
+  .trophy-level-title {
+    font-size:30px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) { 
+
+  .rs-pru3d {
+    /*min-height:800px !important;*/
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px) { 
+
+  .rs-pru3d {
+
+  }
+}
+

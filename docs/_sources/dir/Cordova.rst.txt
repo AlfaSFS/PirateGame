@@ -1,0 +1,32 @@
+
+Cordova
+=======
+
+Cordova is a mobile development framework that enables developers creates game and app using familiar web technologies. Packaging the game source code to be used in cordova app is really simple.
+
+Installation
+-------------
+
+See `Cordova - Get Started <https://cordova.apache.org/#getstarted>`_ to install cordova into your system
+
+* Create new Cordova game with a namespace:
+
+.. code-block:: bash
+
+  cordova create MyGame com.mycompany.game
+
+* Add "android" platform to deploy the app in android, and "browser" platform to test in browser
+
+.. code-block:: bash
+
+  cordova platform add browser
+  cordova platform add android
+
+* Copy the entire content of *production* folder into *www* folder and overwrite all the files.
+
+
+* Plug in your android device and test the game using:
+
+.. code-block:: bash
+
+  cordova run android

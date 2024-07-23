@@ -1,0 +1,133 @@
+
+.rs-pru3d-gameheader {
+
+  font-family:sans-serif;
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+  top:4px;
+  left:50%;
+  transform:translateX(-50%);
+  //background: #111;
+  position: absolute;
+  align-items:center;
+  flex-direction:column;
+  justify-content:space-around;
+
+  .rs-pru3d-dbar {
+
+    position: relative;
+    width: 300px;
+    height: 26px;
+    border:3px solid #eee;
+    border-radius:20px;
+    overflow:hidden;
+
+    .progress-bar {
+
+      position: absolute;
+      background: rgb(1,129,114);
+      background: linear-gradient(0deg, rgba(1,129,114,1) 0%, rgba(7,212,167,1) 100%);
+      height: 100%;
+      width: 100%;
+    }
+
+    .duration-label {
+
+      position: absolute;
+      color:#fff;
+      user-select:none;
+      font-size:16px;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      line-height:26px;
+      letter-spacing:1px;
+    }
+  }
+
+  .rs-pru3d-timebtn {
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+
+    span {
+      display: inline-block;
+      vertical-align:middle;
+      padding:6px;
+    }
+
+    .icon-timer {
+      background:#333;
+    }
+
+    .icon-pausetime {
+      font-size:12px;
+    }
+
+    .icon-playtime {
+      font-size:12px;
+    }
+
+    .timebtn-value {
+      font-size:14px;
+      background:#fbb03b;
+      color:#111;
+      border-radius:4px;
+    }
+  }
+
+  .rs-pru3d-levelbtn {
+
+    width: 140px;
+    margin:0 auto;
+    background: #009245;
+    color:#fff;
+    text-align:center;
+    border-radius:20px;
+    letter-spacing:1px;
+
+    span {
+      user-select:none;
+      display: inline-block;
+      padding:4px 2px;
+    }
+
+    .levelbtn-label {
+      font-family:'Wendy One';
+      font-size: 22px;
+      padding:8px;
+    }
+
+    .levelbtn-shuffle {
+    }
+  }
+
+  .rs-pru3d-movebtn {
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+
+    span {
+      display: inline-block;
+      vertical-align:middle;
+      padding:6px;
+    }
+
+    .icon-quill {
+      background:#333;
+      font-size:18px;
+    }
+
+    .icon-undo {
+      font-size:12px;
+    }
+
+    .movebtn-value {
+      font-size:14px;
+      background:#fbb03b;
+      color:#111;
+      border-radius:4px;
+    }
+  }
+}

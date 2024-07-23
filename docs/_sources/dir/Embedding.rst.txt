@@ -1,0 +1,12 @@
+
+=========
+Embedding
+=========
+
+You can easily embed the game in any web page using iframe
+
+.. code-block:: html
+
+    <iframe src="index.html" widht="640" height="960"></iframe>
+
+See *iframe.html* in *production* folder for a complete example

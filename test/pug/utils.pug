@@ -1,0 +1,122 @@
+-
+  var quotes = [
+  '"Beauty has so many forms, and I think the most beautiful thing is confidence and loving yourself." - <em>Kiesza</em>',
+  'Good, better, best. Never let it rest. \'Til your good is better and your better is best." - <em>St. Jerome</em>',
+  '"Change your life today. Don\'t gamble on the future, act now, without delay. " - <em>Simone de Beauvoir</em>',
+  '"Set your goals high, and don\'t stop till you get there. " - <em>Bo Jackson</em>',
+  '"With the new day comes new strength and new thoughts." - <em> Eleanor Roosevel </em>',
+  '"Life is 10% what happens to you and 90% how you react to it." - <em>Charles R. Swindoll</em>',
+  '"The greatest gift of life is friendship, and I have received it." - <em>Hubert H. Humphrey</em>',
+  '"Walking with a friend in the dark is better than walking alone in the light" - <em>Helen Kelle</em>',
+  '"What you feel inside reflects on your face. So be happy and positive all the time." - <em> Sridevi </em>',
+  '"Don\'t forget to tell yourself positive things daily! You must love yourself internally to glow externally." - <em> Hannah Bronfman</em>',
+  '"It does not matter how slowly you go as long as you do not stop." - <em>Confucius</em>',
+  '"All I can control is myself and just keep having a positive attitude. " - <em>Rose Namajunas</em>',
+  '"We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time." - <em>T.S Eliot</em>',
+  '"People with goals succeed because they know where they\'re going." - <em>Earl Nightingale</em>',
+  '"Failure will never overtake me if my determination to succeed is strong enough. " - <em>Og Mandino</em>',
+  '"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. " - <em>Thomas A. Edison</em>',
+  '"Positivity, confidence, and persistence are key in life, so never give up on yourself." - <em> Khalid</em> ',
+  '"For me, love is endless, and love has no age limit. " - <em>Khalid</em>',
+  '"Confidence comes with maturity, being more accepting of yourself. " - <em>Nicole Scherzinger</em>',
+  '"Age is the acceptance of a term of years. But maturity is the glory of years." <em>Martha Graham</em>',
+  '"Don\’t make friends who are comfortable to be with. Make friends who will force you to lever yourself up.", - <em> Thomas J. Watson</em>',
+  '"It is not a lack of love, but a lack of friendship that makes unhappy marriages." – <em>Friedrich Nietzsche</em>',
+  '“Let us be grateful to the people who make us happy; they are the charming gardeners who make our souls blossom." – <em>Marcel Proust</em>',
+  '"Success is not final, failure is not fatal: it is the courage to continue that counts." - <em>Winston Churchill</em>',
+  '"If everyone is moving forward together, then success takes care of itself. " - <em>Henry Ford</em>',
+  '"The starting point of all achievement is desire." - <em>Napoleon Hill</em>',
+  '"Success is a science; if you have the conditions, you get the result." - <em>Oscar Wilde</em>',
+  '"Love is blind; friendship closes its eyes." -<em> Friedrich Nietzsche</em>',
+  '"Never contract friendship with a man that is not better than thyself." - <em>Confucius</em>',
+  '"The only way to have a friend is to be one." - <em>Ralph Waldo Emerson</em>',
+  '"An excellent man; he has no enemies; and none of his friends like him. " - <em>Oscar Wilde</em>',
+  '"The most I can do for my friend is simply be his friend. " - <em>Henry David Thoreau</em>',
+  '"It is what a man thinks of himself that really determines his fate. " - <em>Henry David Thoreau</em>',
+  '"Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence." -<em>Helen Keller</em>',
+  '"The secret of getting ahead is getting started. " - <em>Mark Twain</em>',
+  '"The will to win, the desire to succeed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence." -<em>Confucius</em>'
+  ]
+
+  function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+  }
+
+mixin genlist(name, folder, total, repeat = 1)
+  - shuffleArray(quotes)
+  ul(data-name="" + name)
+    - var rcount = 0
+    while rcount++ < repeat
+      - var count = 0
+      while count < total
+        li 
+          - ++count
+          a(href="assets/" + folder + "/" + count + ".jpg", title="Item " + count) Item #{count}
+          p!= quotes[count - 1]
+
+mixin genlistExtended(name, folder, total, repeat = 1)
+  - shuffleArray(quotes)
+  ul(data-name="" + name)
+    - var rcount = 0
+    while rcount++ < repeat
+      - var count = 0
+      while count < total
+        li 
+          - ++count
+          a(
+            href="assets/" + folder + "/" + count + ".jpg", 
+            title="Item " + count,
+            data-extended="assets/" + folder + "/extended/" + count + ".jpg", 
+            data-type="photo", 
+            data-thumbnail="assets/" + folder + "/thumbs/" + count + ".jpg") Item #{count}
+          p!= quotes[count - 1]
+
+mixin genlistExtendedLink(name, folder, total, repeat = 1)
+  - shuffleArray(quotes)
+  ul(data-name="" + name)
+    - var rcount = 0
+    while rcount++ < repeat
+      - var count = 0
+      while count < total
+        li 
+          - ++count
+          a(
+            href="assets/" + folder + "/" + count + ".jpg", 
+            title="Item " + count,
+            data-link='https://codecanyon.net/user/raizensoft/portfolio') Item #{count}
+          p!= quotes[count - 1]
+
+mixin genlistAudioExtended(name, folder, total, repeat = 1)
+  - shuffleArray(quotes)
+  ul(data-name="" + name)
+    - var rcount = 0
+    while rcount++ < repeat
+      - var count = 0
+      while count < total
+        li 
+          - ++count
+          a(
+            href="assets/" + folder + "/" + count + ".mp3", 
+            data-extended="assets/" + folder + "/extended/" + count + ".jpg", 
+            data-type="audio") Item #{count}
+          p!= quotes[count - 1]
+
+mixin genlistVideoExtended(name, folder, total, repeat = 1)
+  - shuffleArray(quotes)
+  ul(data-name="" + name)
+    - var rcount = 0
+    while rcount++ < repeat
+      - var count = 0
+      while count < total
+        li 
+          - ++count
+          a(
+            href="assets/" + folder + "/" + count + ".jpg", 
+            data-extended="assets/" + folder + "/extended/" + count + ".jpg", 
+            data-type="video") Item #{count}
+          p!= quotes[count - 1]

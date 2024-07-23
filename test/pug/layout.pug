@@ -1,0 +1,20 @@
+include utils
+doctype html
+html
+  include header
+
+  block body
+    = '\n'
+    body
+      block body-title
+      // Main 
+      #wrapper
+        // Start gallery
+        .rs-container
+          .rs-pru3d
+            = '\n'
+            block content
+        // end gallery
+      // end main wrapper
+      block extra
+      block endscript

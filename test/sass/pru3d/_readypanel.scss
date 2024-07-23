@@ -1,0 +1,19 @@
+
+.rs-pru3d-readypanel {
+
+  width: 240px;
+  font-size: 40px;
+  letter-spacing:2px;
+  font-family:'Wendy One';
+  text-transform:uppercase;
+  text-align: center;
+  padding:6px;
+  color:#eee;
+  background:rgba(10, 10, 10, 0.9);
+  top:50%;
+  left:50%;
+  position: fixed;
+  transform:translate(-50%, -50%);
+  border-radius:10px;
+  user-select:none;
+}

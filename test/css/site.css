@@ -1,0 +1,42 @@
+
+footer {
+  margin-top:20px;
+  text-align:center;
+  color:#555;
+  font-size:14px;
+}
+
+footer a, a:visited {
+  color:white;
+}
+
+.extras-content {
+  display: none;
+}
+
+.helppanel-content {
+
+  width: 100%;
+  height: 100%;
+  user-select:none;
+  font-family: 'Montserrat';
+}
+
+.help-section {
+  padding:8px;
+}
+
+.help-section img {
+  display: block;
+  margin:0 auto;
+}
+
+.help-section h3 {
+  font-size:24px;
+  margin:8px;
+}
+
+.helppanel-content .help-section {
+
+  text-align: center
+}

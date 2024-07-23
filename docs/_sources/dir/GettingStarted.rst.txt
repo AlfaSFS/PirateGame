@@ -1,0 +1,65 @@
+
+Getting Started
+===============
+
+What's inside
+-------------
+
+* **production**
+    Game production ready files
+* **dist**
+    Compiled and minified Javascript and CSS resources
+* **libs**
+    External Javascript libraries used in development.
+* **src**
+    Main javascript source files.
+* **test**
+    Test folder including data used in development.
+* **Gruntfile.js**
+    Grunt build file.
+* **package.json**
+    node.js project file.
+* **npm-shrinkwrap.json**
+    node.js package dependencies file.
+* **docs**
+    Documentation includes html and pdf format
+
+Use production ready files
+--------------------------
+
+  The *production* folder contains everything you need to deploy the game to different mediums. The files are compressed and optimized to
+  be embedded in website or integrated in a Cordova app.
+
+Folder Structure
+----------------
+
+::
+
+  assets/
+    graphics/
+    sounds/
+    text/
+  css/
+    fonts/
+    pru3d.min.css
+    app.css
+  js/
+    pru3d.min.js
+  data/
+  index.html
+
+* *assets:* Contain all game graphics, sounds and text resources
+
+* *css:* Main stylesheet folder
+
+  * *fonts:* Custom icon fonts folder
+  * *pru3d.min.css:* Minimized game stylesheet
+  * *app.css:* Generic and non-application specific stylesheet
+
+* *js:*
+
+  * *pru3d.min.js:* Main minimized Javascript file
+
+* *data:* Game additional data
+
+* *index.html:* Main html file

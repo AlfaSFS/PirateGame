@@ -1,0 +1,107 @@
+
+Customization
+=============
+
+You can customize the game by editing *config.json* (production/ test folder) or insert javascript code into intializing code in *index.html*
+
+.. image:: config_dir.jpg
+   :width: 800
+
+config.json
+-----------
+
+* General parameters
+
+.. list-table:: 
+   :widths: 30 25 25 50
+   :header-rows: 1
+
+   * - Name
+     - Type
+     - Default
+     - Description
+   * - useHelpPanel
+     - boolean
+     - true
+     - Enable or disable help panel
+   * - useCreditPanel
+     - boolean
+     - true
+     - Enable or disable credit panel
+   * - useBackgroundMusic
+     - boolean
+     - true
+     - Enable or disable background music
+   * - backgroundVolume
+     - number
+     - 0.45
+     - Adjust the background volume
+
+* String resources for changing text interfaces: 
+    APP_TITLE, APP_INFO, NEW_GAME, HELP, HELP_TEXT, SETTING, CREDIT, CREDIT_TEXT
+
+Skinning
+--------
+
+This section will explain the process of skinning the game.
+
+- Navigate to "test/assets/graphics" folder and make changes to these assets. 
+- After that, run "grunt production" to create the new distribution.
+
+.. image:: graphic_dir.jpg
+   :width: 800
+
+- Replace "Road.png" to change the grass texture
+
+.. image:: road.jpg
+   :width: 800
+
+- Replace "sad_pirate.png" to change the game over screen shiba image
+
+.. image:: sad_pirate.jpg
+   :width: 800
+
+- Replace "logo.png" to change the game logo.
+
+.. image:: logo.jpg
+   :width: 800
+
+- Replace "tutor.png" to change the intro tutorial.
+
+.. image:: tutor.jpg
+   :width: 800
+
+Javascript options
+------------------
+
+- You also have more options to customize the game using the javascript object settings.
+
+.. image:: options.jpg
+   :width: 400
+
+You Pirate speed and other enemies speed
+--------------------------------------
+
+- Input the value of *pirateSpeed* and *enemySpeed* to change these entities speed
+
+.. code-block:: javascript
+ :linenos:
+
+  var el = document.querySelector('.rs-pru3d');
+  var pru3d = new PirateRun(el, {
+    pirateSpede:80,
+    enemySpeed:200
+  });
+
+Max health
+-----------
+
+- Input the value of *maxHealth* to change your car maximum health, default is 3
+
+.. code-block:: javascript
+ :linenos:
+
+  var el = document.querySelector('.rs-pru3d');
+  var pru3d = new PirateRun(el, {
+    maxHealth:3
+  });

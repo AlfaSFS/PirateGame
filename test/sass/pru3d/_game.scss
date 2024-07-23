@@ -1,0 +1,63 @@
+
+//$galleryBackground:#111 !default; 
+$galleryBackground:url('pattern3.png') !default; 
+$galleryMinHeight:650px;
+$galleryMaxWidth:984px; 
+//$galleryMaxWidth:100%;
+
+body {
+  height: 100%;
+  overflow:hidden;
+  overscroll-behavior-y: contain;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select:none;
+  user-select:none;
+  touch-action: none;
+  cursor:url('cursor.png'), auto;
+  transform-style:preserve-3d;
+  perspective:1000px;
+}
+
+.rs-pru3d {
+
+  display: none;
+  width: 100%;
+  //min-height: $galleryMinHeight;
+  max-width: $galleryMaxWidth;
+  margin: 0 auto;
+  box-sizing:border-box!important;
+  //background:$galleryBackground;
+  background:#7c7a70;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 3px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 4px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 3px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  user-select:none;
+  perspective:1000px;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.rs-pru3d-timeout {
+  font-weight:bold;
+}
+
+.coin-counter {
+  font-family:'Pacifico';
+  position: fixed;
+  font-size:48px;
+  color:#ffcc00;
+  z-index:9999;
+  background:rgba(20, 20, 20, 0.75);
+  padding:4px;
+  border-radius:12px;
+}

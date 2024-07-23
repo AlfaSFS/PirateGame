@@ -1,0 +1,31 @@
+{
+  "name": "3d-pirate-run",
+  "version": "1.0.0",
+  "description": "3d Pirate Run",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rtr",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-pug": "^2.0.0",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-http-server": "^2.1.0",
+    "grunt-mkdir": "^1.0.0",
+    "http-server": "^0.12.0"
+  }
+}

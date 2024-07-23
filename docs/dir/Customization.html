@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Customization &#8212; 3D Pirate Run  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/main.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Assets" href="Assets.html" />
+    <link rel="prev" title="Embedding" href="Embedding.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="customization">
+<h1>Customization<a class="headerlink" href="#customization" title="Permalink to this heading">¶</a></h1>
+<p>You can customize the game by editing <em>config.json</em> (production/ test folder) or insert javascript code into intializing code in <em>index.html</em></p>
+<a class="reference internal image-reference" href="../_images/config_dir.jpg"><img alt="../_images/config_dir.jpg" src="../_images/config_dir.jpg" style="width: 800px;" /></a>
+<section id="config-json">
+<h2>config.json<a class="headerlink" href="#config-json" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>General parameters</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23.1%" />
+<col style="width: 19.2%" />
+<col style="width: 19.2%" />
+<col style="width: 38.5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>useHelpPanel</p></td>
+<td><p>boolean</p></td>
+<td><p>true</p></td>
+<td><p>Enable or disable help panel</p></td>
+</tr>
+<tr class="row-odd"><td><p>useCreditPanel</p></td>
+<td><p>boolean</p></td>
+<td><p>true</p></td>
+<td><p>Enable or disable credit panel</p></td>
+</tr>
+<tr class="row-even"><td><p>useBackgroundMusic</p></td>
+<td><p>boolean</p></td>
+<td><p>true</p></td>
+<td><p>Enable or disable background music</p></td>
+</tr>
+<tr class="row-odd"><td><p>backgroundVolume</p></td>
+<td><p>number</p></td>
+<td><p>0.45</p></td>
+<td><p>Adjust the background volume</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><dl class="simple">
+<dt>String resources for changing text interfaces:</dt><dd><p>APP_TITLE, APP_INFO, NEW_GAME, HELP, HELP_TEXT, SETTING, CREDIT, CREDIT_TEXT</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="skinning">
+<h2>Skinning<a class="headerlink" href="#skinning" title="Permalink to this heading">¶</a></h2>
+<p>This section will explain the process of skinning the game.</p>
+<ul class="simple">
+<li><p>Navigate to “test/assets/graphics” folder and make changes to these assets.</p></li>
+<li><p>After that, run “grunt production” to create the new distribution.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/graphic_dir.jpg"><img alt="../_images/graphic_dir.jpg" src="../_images/graphic_dir.jpg" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>Replace “Road.png” to change the grass texture</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/road.jpg"><img alt="../_images/road.jpg" src="../_images/road.jpg" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>Replace “sad_pirate.png” to change the game over screen shiba image</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/sad_pirate.jpg"><img alt="../_images/sad_pirate.jpg" src="../_images/sad_pirate.jpg" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>Replace “logo.png” to change the game logo.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/logo.jpg"><img alt="../_images/logo.jpg" src="../_images/logo.jpg" style="width: 800px;" /></a>
+<ul class="simple">
+<li><p>Replace “tutor.png” to change the intro tutorial.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/tutor.jpg"><img alt="../_images/tutor.jpg" src="../_images/tutor.jpg" style="width: 800px;" /></a>
+</section>
+<section id="javascript-options">
+<h2>Javascript options<a class="headerlink" href="#javascript-options" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>You also have more options to customize the game using the javascript object settings.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/options.jpg"><img alt="../_images/options.jpg" src="../_images/options.jpg" style="width: 400px;" /></a>
+</section>
+<section id="you-pirate-speed-and-other-enemies-speed">
+<h2>You Pirate speed and other enemies speed<a class="headerlink" href="#you-pirate-speed-and-other-enemies-speed" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Input the value of <em>pirateSpeed</em> and <em>enemySpeed</em> to change these entities speed</p></li>
+</ul>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">el</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.rs-pru3d&#39;</span><span class="p">);</span>
+<span class="linenos">2</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">pru3d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">PirateRun</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">3</span><span class="w">   </span><span class="nx">pirateSpede</span><span class="o">:</span><span class="mf">80</span><span class="p">,</span>
+<span class="linenos">4</span><span class="w">   </span><span class="nx">enemySpeed</span><span class="o">:</span><span class="mf">200</span>
+<span class="linenos">5</span><span class="w"> </span><span class="p">});</span>
+</pre></div>
+</div>
+</section>
+<section id="max-health">
+<h2>Max health<a class="headerlink" href="#max-health" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Input the value of <em>maxHealth</em> to change your car maximum health, default is 3</p></li>
+</ul>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">el</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.rs-pru3d&#39;</span><span class="p">);</span>
+<span class="linenos">2</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">pru3d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">PirateRun</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">3</span><span class="w">   </span><span class="nx">maxHealth</span><span class="o">:</span><span class="mf">3</span>
+<span class="linenos">4</span><span class="w"> </span><span class="p">});</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">3D Pirate Run</a></h1>
+
+
+
+<p class="blurb">Realistic 3D Casual Game</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Embedding.html">Embedding</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Customization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#config-json">config.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#skinning">Skinning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#javascript-options">Javascript options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#you-pirate-speed-and-other-enemies-speed">You Pirate speed and other enemies speed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#max-health">Max health</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Assets.html">Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cordova.html">Cordova</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BuildTasks.html">Build Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WordPressIntegration.html">WordPress Integration</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script><br>
+<p><h3><a href="https://raizensoft.com">Raizensoft</a></h3></p>
+<p>Advanced Web Application Development</p>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Raizensoft.com.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/dir/Customization.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

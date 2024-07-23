@@ -1,0 +1,63 @@
+
+===========
+Development
+===========
+
+Using the provided build tools, you can quickly setup the development environment and start customizing the game very easily.
+
+Setup environment
+-----------------
+
+* Install `nodejs <https://nodejs.org/en/download/>`_
+* Run Window command line program (or Terminal app in Linux/Unix OS)
+* Change current directory to the game folder
+* Type "npm install"
+* Once finished, type "grunt" to launch a local http server in the background and start developing
+* Test the gallery by go to "http://localhost:4040/test/"
+
+Asynchronous Module
+-------------------
+
+Modular programming has many advantages over one monolothic code base. All the app components are designed as individual classes wrapped in AMD module
+and then loaded asynchronously using require.js. This approach ensures the separation of concerns between software components and help implementing future features
+much easier. 
+
+Entry point
+-----------
+
+In the main html file, setup an entry Javascript file which configures requirejs and bootstraps the game:
+
+* index.html
+
+::
+
+  <script src="js/require.js" data-main="js/entry.js"></script>
+
+* entry.js
+
+.. code-block:: javascript
+  :linenos:
+
+    // Setup baseUrl for source folder and library paths
+    requirejs.config({
+      baseUrl:"../src/",
+      paths:{
+        libs:"../libs/"
+      }
+    });
+
+    require(['rs/pru3d/PirateRun', 'libs/domReady'], 
+
+      function(PirateRun, domReady) {
+
+        "use strict";
+
+        domReady(function() {
+
+          var el = document.querySelector('.rs-pru3d');
+          var pru3d = new PirateRun(el);
+          window.pru3d = pru3d;
+        });
+      });
+
+See `require.js <https://requirejs.org/docs/start.html>`_ for more detail about developing with AMD module
