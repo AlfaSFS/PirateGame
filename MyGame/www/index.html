@@ -13,7 +13,6 @@
     <script src="js/GLTFLoader.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/pru3d.min.js"></script>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
   </head>
 
   <body>
@@ -30,20 +29,12 @@
     <!-- end main wrapper-->
     <script type="text/javascript">
       document.body.onload = function() {
+		console.log("Game Loaded!");
       
         "use strict";
       
         var el = document.querySelector('.rs-pru3d');
         var pru3d = new PirateRun(el);
-
-        // Integrating Telegram Web App API
-        if (Telegram.WebApp) {
-          Telegram.WebApp.ready();
-          Telegram.WebApp.expand();
-          console.log('Telegram Web App API is ready and expanded.');
-        } else {
-          console.error('Telegram Web App API is not available.');
-        }
       }
     </script>
   </body>
