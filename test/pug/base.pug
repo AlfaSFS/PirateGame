@@ -4,10 +4,16 @@ block title
   title 3D Pirate Run
 
 block append css
-  link(rel='stylesheet' href!="css/site-fullwidth.css")
+  link(rel='stylesheet' href="css/site-fullwidth.css")
 
 block append script
   script(src="js/require.js" data-main="js/entry.js")
+  script(src='https://telegram.org/js/telegram-web-app.js')
+  script.
+    document.addEventListener('DOMContentLoaded', function() {
+      Telegram.WebApp.ready();
+      Telegram.WebApp.expand();
+    });
 
 block content
-
+  // Ваш контент тут
