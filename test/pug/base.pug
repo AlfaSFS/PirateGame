@@ -8,12 +8,7 @@ block append css
 
 block append script
   script(src="js/require.js" data-main="js/entry.js")
-  script(src='https://telegram.org/js/telegram-web-app.js')
-  script.
-    document.addEventListener('DOMContentLoaded', function() {
-      Telegram.WebApp.ready();
-      Telegram.WebApp.expand();
-    });
+  script(src="js/index.js") // Додаємо підключення файлу index.js
 
 block content
   // Ваш контент тут
