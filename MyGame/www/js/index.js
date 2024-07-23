@@ -26,19 +26,15 @@ function onDeviceReady() {
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
-
-    // Додаємо код для підключення Telegram Web App API
-    const script = document.createElement('script');
-    script.src = 'https://telegram.org/js/telegram-web-app.js';
-    script.onload = function() {
-        Telegram.WebApp.onEvent('viewportChanged', function() {
-            Telegram.WebApp.expand();
-        });
-        if (Telegram.WebApp.isExpanded) {
-            Telegram.WebApp.expand();
-        } else {
-            Telegram.WebApp.expand();
-        }
-    };
-    document.head.appendChild(script);
 }
+
+
+// Додаємо код для підключення Telegram Web App API та розгортання на весь екран з викликом функції ready
+const script = document.createElement('script');
+script.src = 'https://telegram.org/js/telegram-web-app.js';
+script.onload = function() {
+    console.log('Telegram Web App API script loaded.');
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();
+};
+document.head.appendChild(script);
