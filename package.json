@@ -21,11 +21,11 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-pug": "^2.0.0",
     "grunt-contrib-requirejs": "^1.0.0",
-    "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-http-server": "^2.1.0",
     "grunt-mkdir": "^1.0.0",
-    "http-server": "^0.12.0"
+    "http-server": "^0.12.0",
+    "grunt-sass": "^3.0.0"
   }
 }

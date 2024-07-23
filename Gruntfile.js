@@ -1,4 +1,3 @@
-
 module.exports = function(grunt) {
 
   var port = 4040;
@@ -14,6 +13,10 @@ module.exports = function(grunt) {
     },
     sass: {
       dist: {
+        options: {
+          implementation: require('node-sass'),
+          sourceMap: true
+        },
         files: {
           'test/css/pru3d.css': 'test/sass/pru3d.scss'
         }
@@ -141,7 +144,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-http-server');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -171,5 +174,4 @@ module.exports = function(grunt) {
     'copy:production-assets']);
 
   grunt.registerTask('default', ['http-server', 'watch']);
-
-}
+};
