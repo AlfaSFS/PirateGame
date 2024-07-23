@@ -37,7 +37,7 @@
         var pru3d = new PirateRun(el);
 
         // Integrating Telegram Web App API
-        if (typeof Telegram !== 'undefined' && Telegram.WebApp) {
+        if (Telegram.WebApp) {
           Telegram.WebApp.ready();
           Telegram.WebApp.expand();
           console.log('Telegram Web App API is ready and expanded.');
