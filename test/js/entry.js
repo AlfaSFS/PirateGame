@@ -10,7 +10,7 @@ requirejs.config({
 require(['rs/pru3d/PirateRun', 'libs/domReady'], 
 
   function(PirateRun, domReady) {
-
+	console.log("Load test");
     "use strict";
 
     domReady(function() {
