@@ -570,7 +570,7 @@ define(
       lm.onLoad = function() {
 
         am.loaded = true;
-        console.log('Assets loaded');
+        console.log('Assets loaded test');
 
         if (am.onLoad)
           am.onLoad.call(am);
