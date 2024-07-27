@@ -37,8 +37,7 @@
       document.body.onload = function() {
         // Integrating Telegram Web App API
         if (typeof Telegram !== 'undefined' && Telegram.WebApp) {
-          Telegram.WebApp.ready();
-          Telegram.WebApp.expand();
+          
           console.log('Telegram Web App API is ready and expanded.');
         } else {
           console.error('Telegram Web App API is not available.');

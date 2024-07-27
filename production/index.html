@@ -13,6 +13,7 @@
     <script src="js/GLTFLoader.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/pru3d.min.js"></script>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
   </head>
 
   <body>
@@ -29,12 +30,17 @@
     <!-- end main wrapper-->
     <script type="text/javascript">
 	  console.log("Load Production");
+	  Telegram.WebApp.ready();
+      Telegram.WebApp.expand();
       document.body.onload = function() {
 		
         "use strict";
-      
+		Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
         var el = document.querySelector('.rs-pru3d');
         var pru3d = new PirateRun(el);
+		Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
       }
     </script>
   </body>
